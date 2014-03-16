@@ -3,26 +3,20 @@ require 'advertisement'
 
 class Controller
 
-	def initialize
-		@newspapers = []
-		@ads = []
-	end
-
 	def list_newspapers
-		@newspapers
+		Newspaper.list		
 	end
 
 	def add_newspaper(newspaper)
-		@newspapers.push( Newspaper.new(newspaper[:name], newspaper[:city]))
+		Newspaper.create(newspaper)
 	end
 
 	def list_advertisements
-		@ads
+		Advertisement.list
 	end
 
 	def add_advertisement(ad)
-		@ads << Advertisement.new(ad[:name], ad[:description])
-
+		Advertisement.create(ad)
 	end
 
 end
