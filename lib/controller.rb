@@ -21,6 +21,7 @@ class Controller
 
 	def link_ad_to_newspaper(ad, newspaper)
 		newspaper.associate_ad(ad)
+		ad.associate_newspaper(newspaper)
 	end
 
 end

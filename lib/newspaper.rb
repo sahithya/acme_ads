@@ -15,6 +15,10 @@ class Newspaper
 		newspaper
 	end
 
+	def self.delete_all
+		@list = []
+	end
+	
 	def initialize(name, city)
 		@name = name
 		@city = city
@@ -25,7 +29,4 @@ class Newspaper
 		@ads.push(ad)
 	end
 
-	def self.delete_all
-		@list = []
-	end
 end
