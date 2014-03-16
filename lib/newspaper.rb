@@ -1,6 +1,7 @@
 class Newspaper
 
 	attr_accessor :name, :city
+	attr_reader :ads
 
 	@list = []
 
@@ -17,6 +18,14 @@ class Newspaper
 	def initialize(name, city)
 		@name = name
 		@city = city
+		@ads = []
 	end
 
+	def associate_ad(ad)
+		@ads.push(ad)
+	end
+
+	def self.delete_all
+		@list = []
+	end
 end
