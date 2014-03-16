@@ -6,7 +6,7 @@ describe Controller do
 
 	let (:controller) {Controller.new}
 
-	it "should be empty when no newspapers have been added" do
+	it "should retun an empty list when no newspapers have been added" do
 		controller.list_newspapers.should be_empty
 	end
 
@@ -16,5 +16,10 @@ describe Controller do
 		controller.list_newspapers.size.should == 1
 		controller.list_newspapers.first.should == newspaper
 	end
+
+	it "should retun an empty list when no ads have been added" do
+		controller.list_ads.should be_empty
+	end
+
 
 end
