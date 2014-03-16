@@ -1,0 +1,14 @@
+Create a newspaper
+List newspapers
+Create an ad
+List ads
+Associate ad with newspaper
+Associate ad with multiple newspapers
+Add multiple ads to a single newspaper
+Remove ad from newspaper
+Delete ad 
+Delete newspaper
+Modify ad
+Modify newspaper
+List ad by newspaper
+List newspapers by ad
