@@ -13,8 +13,13 @@ class Controller
 		@newspapers.push(newspaper)
 	end
 
-	def list_ads
+	def list_advertisements
 		@ads
+	end
+
+	def add_advertisement(ad)
+		@ads << ad
+
 	end
 
 end
